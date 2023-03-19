@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Website made by Kris Kosta // kriskosta.github.io-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+    <title>ABOUT ROARK</title>
+
+<style>
+  body {
+            background-image: url("img/background.png");
+            color: white; overflow: hidden; margin-top: 0px;
+        }
+
+#layerimg{width: 100vw; position: absolute;}
+#authorimg{width: 100vw; position: absolute;}
+
+#layerimg, #authorimg{margin-top: -5vw; margin-right: 4vw;}
+#about-logo{margin-top: -10px; width: 100vw; position: absolute;}
+
+
+#logoimg{width: 190px; margin-left: 15px; margin-top: -5px;}
+#igimg{width: 50px; margin-left: 15px; position: absolute; bottom: 0; margin-bottom: 20px;}
+
+#logoa{height:cover; z-index: 5; position: absolute;}
+.fade-in-image { animation: fadeIn 5s; }
+
+#pagename{width: 100px; top: 0; right: 0; margin-right: 35px; margin-top: 40px; position: absolute;}
+#mobileimg{ width: 100vw; height: 100%;
+  margin-left: auto;
+  margin-right: auto; margin-top: -50px;}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media(max-width: 800px){#about-logo, #layerimg, #authorimg{transform: scale(1.3); margin-top: 15vw;}}
+  @media(min-width: 600px){#mobileimg{display: none;}}
+  @media(max-width: 600px){#about-logo, #layerimg, #authorimg{display: none;}}
+
+
+</style>
+</head>
+<body>
+    <a href="./index" id="logoa"> <img src="img/logo.png" id="logoimg" draggable="false"></a>
+
+    <img src="img/aboutback1.png" id="layerimg" draggable="false">
+    <img src="img/pageabout.png" id="pagename" draggable="false">
+    <img src="img/abouttext.png" class="fade-in-image" id="layerimg" draggable="false">
+    <img src="img/authorlit.png" class="fade-in-image" id="authorimg" draggable="false">
+    <img src="img/ABOUTMOBILE.png" class="fade-in-image" id="mobileimg" draggable="false">
+
+   
+   <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" id="igimg"></a>
+
+    <script>
+        
+        //Logo variables
+        const hoverItem4 = document.getElementById("logoimg");
+        const buildingImg4 = document.getElementById("logoimg");  
+
+        //IG Logo variables
+        const hoverItem5 = document.getElementById("igimg");
+        const buildingImg5 = document.getElementById("igimg");  
+        
+        // Logo lit
+        hoverItem4.addEventListener("mouseover", () => {
+            buildingImg4.src = "img/logolit.png";
+        });
+        
+        hoverItem4.addEventListener("mouseout", () => {
+            buildingImg4.src = "img/logo.png";
+        });
+        
+
+        // Ig Logo lit
+        hoverItem5.addEventListener("mouseover", () => {
+            buildingImg5.src = "img/iglogolit.png";
+        });
+        
+        hoverItem5.addEventListener("mouseout", () => {
+            buildingImg5.src = "img/iglogo.png";
+        });
+
+        
+        
+        </script>
+
+
+</body>
+</html>
+
+<!-- Website made by Kris Kosta // kriskosta.github.io-->

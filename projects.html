@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Website made by Kris Kosta // kriskosta.github.io-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>PROJECTS ROARK</title>
+
+<style>
+  body {
+            background-image: url("img/background.png");
+            color: white; overflow-x: hidden; margin-top: 0px; padding: 0px;
+        }
+
+
+#logoimg{width: 190px; margin-left: 15px; margin-top: -5px; position: fixed; z-index: 5;}
+#pagename{width: 140px; top: 0; right: 0; margin-right: 35px; margin-top: 40px; position: fixed; z-index: 5;}
+.logoblackbar{top: 0; left: 0; padding-left: 8px; width: 100vw; height: 90px; z-index: 4; position: fixed;}
+
+#logoa{height:cover; z-index: 5; position: absolute;}
+
+
+.fade-in-image{ animation: fadeIn 5s; color: white;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+main{display: flex; justify-content: center; align-items: center; width: 100vw; z-index: 1;}
+#grid{ margin-top: 10vw; margin-bottom: 4vw; z-index: 6; grid-template-columns: repeat(3, 1fr);
+display: grid; grid-gap: 200px; justify-content: center; align-content: center; z-index: 1;}
+#squareimg{width: 15vw; z-index: 1; transition: all .4s;}
+#squareimg:hover{transform: scale(1.1);}
+
+
+/* width */
+::-webkit-scrollbar {
+display: none;}
+
+
+@media(max-width: 1200px){#grid{ margin-top: 15vw; 
+    grid-gap: 50px; grid-template-columns: repeat(3, 1fr);} #squareimg{width: 22vw;}}
+
+@media(max-width: 1000px){#layerimg{object-fit:cover; margin-top: 14vh;}}
+
+@media(max-width: 800px){#about-logo{display: none;} #layerimg{margin-top: 25vh;} #grid{margin-top: 30vw;}}
+
+
+
+</style>
+</head>
+<body>
+    
+
+<main>  
+<div id="grid"> 
+<a href="./projectpage1.html"> <img src="img/portfolio/img1.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img2.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img3.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img4.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img5.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img6.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img7.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img8.png" id="squareimg" draggable="false"></a>
+<a href="./comingsoon"> <img src="img/portfolio/img9.png" id="squareimg" draggable="false"></a>
+</div>
+</main>
+
+
+<div class="logoblackbar">
+    <a href="./index" id="logoa"> <img src="img/logo.png" id="logoimg" draggable="false"></a>
+    
+    <img src="img/pageprojects.png" id="pagename" draggable="false">
+ </div>
+
+    <script>
+        
+        //Logo variables
+        const hoverItem4 = document.getElementById("logoimg");
+        const buildingImg4 = document.getElementById("logoimg");  
+
+        //IG Logo variables
+        const hoverItem5 = document.getElementById("igimg");
+        const buildingImg5 = document.getElementById("igimg");  
+        
+        // Logo lit
+        hoverItem4.addEventListener("mouseover", () => {
+            buildingImg4.src = "img/logolit.png";
+        });
+        
+        hoverItem4.addEventListener("mouseout", () => {
+            buildingImg4.src = "img/logo.png";
+        });
+        
+
+        // Ig Logo lit
+        hoverItem5.addEventListener("mouseover", () => {
+            buildingImg5.src = "img/iglogolit.png";
+        });
+        
+        hoverItem5.addEventListener("mouseout", () => {
+            buildingImg5.src = "img/iglogo.png";
+        });
+
+        
+        
+        </script>
+
+
+</body>
+</html>
+
+<!-- Website made by Kris Kosta // kriskosta.github.io-->

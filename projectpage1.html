@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Website made by Kris Kosta // kriskosta.github.io-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>PROJECTS ROARK</title>
+
+<style>
+  body {
+            background-image: url("img/background.png");
+            color: white; overflow-x: hidden; margin-top: 0px; padding: 0px; overflow: hidden;
+        }
+
+
+#logoimg{width: 190px; margin-left: 15px; margin-top: -5px; position: fixed; z-index: 5;}
+#pagename{width: 140px; top: 0; right: 0; margin-right: 35px; margin-top: 40px; position: fixed; z-index: 5;}
+.logoblackbar{top: 0; left: 0; padding-left: 8px; width: 100vw; height: 90px; z-index: 4; position: fixed;}
+
+
+#portfolioimg{width: 100%; display: block; margin-bottom: 50px;}
+
+
+#logoa{height:cover; z-index: 5; position: absolute;}
+main{display: flex; flex-direction: row; padding: 10vw; padding-top: 8vw; max-width: 2000px;}
+
+side-img, side-text{display: block; min-height: 300px; min-width: 200px; width: 50vw; height: 100vh;}
+side-text{width: 30vw; padding-top: 110px; margin-right: 40px;}
+side-img{width: 60vw; overflow-y: auto;}
+header-wrap{padding-top: 30px;}
+h2{font-family: Helvetica, sans-serif; font-size: 20px; font-weight: normal; width: 24vw; display: block;}
+
+.fade-in-image{animation: fadeIn 5s; color: white;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body, .logoblackbar, header-wrap{left: 0;}
+
+@media(max-width: 800px){main{padding-top: 12vw;}}
+
+@media(max-width: 1050px){
+main{flex-direction: column; gap: 0px; padding: 0px; padding-top: 20vw; } 
+body{overflow: visible;}
+#logoimg{position: relative; margin: 0px; margin-left: 0px; margin-top: -5px;} 
+.logoblackbar{width: 100vw; height: 100px; padding-left: 8px; display: flex; justify-content: center; align-items: center; position: absolute;}
+#pagename{display: none;}
+
+h2{width: auto; padding: 10px; padding-left: 15%; padding-right: 15%; font-size: 20px; text-align: center;}
+header-wrap{width: 100vw; padding: 0px;}
+side-text{width: 100vw; padding-top: 0px; height: auto; margin-right: 0px; margin: 0px;}
+side-img{width: 100vw; height: auto; display: flex; flex-direction: column; 
+    align-items: center; justify-content: center; overflow-y: visible}
+#portfolioimg{width: 70%;} html{overflow-x:hidden !important; padding: 0px !important; margin: 0px !important;}
+}
+
+
+</style>
+</head>
+<body>
+    
+
+<main>  
+<side-text>
+<header-wrap>
+<h2><b>OBJECTIVE</b><br>  
+TO CREATE STRUCTURAL PLANS FOR RESIDENTIAL BUILDINGS </h2>
+<br>
+<h2><b>CLIENT</b> <br>
+AUSTIN CITY HOUSING ORGANIZATION</h2>
+</header-wrap>
+</side-text>
+
+
+<side-img class="fade-in-image"> 
+   <img src="img/portfolio/img6s.png" id="portfolioimg" draggable="false">  
+   <img src="img/portfolio/img1.png" id="portfolioimg" draggable="false"> 
+
+</side-img>
+
+</main>
+
+
+<div class="logoblackbar">
+    <a href="./index" id="logoa"> <img src="img/logo.png" id="logoimg" draggable="false"></a>
+    
+    <img src="img/pageprojects.png" id="pagename" draggable="false">
+ </div>
+
+    <script>
+        
+        //Logo variables
+        const hoverItem4 = document.getElementById("logoimg");
+        const buildingImg4 = document.getElementById("logoimg");  
+
+        //IG Logo variables
+        const hoverItem5 = document.getElementById("igimg");
+        const buildingImg5 = document.getElementById("igimg");  
+        
+        // Logo lit
+        hoverItem4.addEventListener("mouseover", () => {
+            buildingImg4.src = "img/logolit.png";
+        });
+        
+        hoverItem4.addEventListener("mouseout", () => {
+            buildingImg4.src = "img/logo.png";
+        });
+        
+
+        // Ig Logo lit
+        hoverItem5.addEventListener("mouseover", () => {
+            buildingImg5.src = "img/iglogolit.png";
+        });
+        
+        hoverItem5.addEventListener("mouseout", () => {
+            buildingImg5.src = "img/iglogo.png";
+        });
+
+    
+        
+        </script>
+
+
+</body>
+</html>
+
+<!-- Website made by Kris Kosta // kriskosta.github.io-->

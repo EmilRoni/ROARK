@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- Website made by Kris Kosta // kriskosta.github.io-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>CONTACT ROARK</title>
+
+<style>
+  body {
+            background-image: url("img/background.png");
+            color: white; overflow: hidden; margin-top: 0px;
+        }
+
+#layerimg{width: 100vw; position: absolute;}
+#authorimg{width: 100vw; position: absolute;}
+
+#layerimg, #authorimg{margin-top: -5vw; margin-right: 4vw;}
+#about-logo{margin-top: -10px; width: 100vw; position: absolute;}
+
+
+#logoimg{width: 190px; margin-left: 15px; margin-top: -5px;}
+#igimg{width: 50px; margin-left: 15px; position: absolute; bottom: 0; margin-bottom: 20px;}
+
+#logoa{height:cover; z-index: 5; position: absolute;}
+#contact-logo{width: 100vw; position: absolute; margin-top: -10px;}
+
+
+.fade-in-image { animation: fadeIn 5s; color: white;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+main{width: 100vw; z-index: 6; height: 90vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; flex-direction: row;}
+#dash{width: 20px; margin-left: 40px; margin-right: 40px}
+h2{font-size: auto; font-family: Helvetica, Sans-Serif; font-weight: bold; color: white;}
+h2:hover{color:white;}
+#pagename{width: 130px; top: 0; right: 0; margin-right: 35px; margin-top: 40px; position: absolute;}
+
+@media(max-width: 800px){#about-logo{display: none;} main{flex-direction: column;}}
+
+@media(max-width: 1000px){#layerimg{object-fit:cover; margin-top: 14vh;}}
+
+@media(max-width: 800px){#about-logo{display: none;} main{flex-direction: column;} #layerimg{margin-top: 25vh;}}
+
+
+</style>
+</head>
+<body>
+    <a href="./index" id="logoa"> <img src="img/logo.png" id="logoimg" draggable="false"></a>
+    
+    <img src="img/contactbackground.png" id="layerimg" draggable="false">
+    <img src="img/pagecontact.png" id="pagename" draggable="false">
+ 
+
+<main>   
+<h2 class="fade-in-image"> EMILRONI@LIVE.DK</h2> <img src="img/dash.png" id="dash"> <h2 class="fade-in-image">+1 (858) 328-9872 </h2>
+</main>
+
+
+   <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" id="igimg"></a>
+
+    <script>
+        
+        //Logo variables
+        const hoverItem4 = document.getElementById("logoimg");
+        const buildingImg4 = document.getElementById("logoimg");  
+
+        //IG Logo variables
+        const hoverItem5 = document.getElementById("igimg");
+        const buildingImg5 = document.getElementById("igimg");  
+        
+        // Logo lit
+        hoverItem4.addEventListener("mouseover", () => {
+            buildingImg4.src = "img/logolit.png";
+        });
+        
+        hoverItem4.addEventListener("mouseout", () => {
+            buildingImg4.src = "img/logo.png";
+        });
+        
+
+        // Ig Logo lit
+        hoverItem5.addEventListener("mouseover", () => {
+            buildingImg5.src = "img/iglogolit.png";
+        });
+        
+        hoverItem5.addEventListener("mouseout", () => {
+            buildingImg5.src = "img/iglogo.png";
+        });
+
+        
+        
+        </script>
+
+
+</body>
+</html>
+
+<!-- Website made by Kris Kosta // kriskosta.github.io-->

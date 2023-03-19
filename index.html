@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Website made by Kris Kosta // kriskosta.github.io-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=MY, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+
+
+    <title>ROARK</title>
+
+    <style>
+        body {
+            background-image: url("img/background.png");
+            color: white; overflow: hidden; margin-top: 0px;
+        }
+
+        /* background building images */
+        .buildingimg {
+            position: absolute;
+            width: 90vw; margin-left: 10vw;
+        }
+
+        .buildingimg:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+
+/* Container for invisable items */
+.hoverbox{position: absolute; z-index: 4;
+  width: 100vw; display: grid; height: 100vh; grid-template-columns: auto 22vw 16vw 31vw;
+z-index: 2;
+}
+
+/* invisable boxes that control the hover effect and a links */
+.hoveritem{
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 0px;}
+
+
+  #abuildings{height: 100vh; padding: 0px; display: block;}
+
+  /* to cover top space from hover effect */
+.topbox{position: absolute; display: block; width: 70vw; height: 24vh; z-index: 6;}
+.topbox2{position: absolute; display: block; margin-top: 20vh; width: 54vw; height: 24vh; z-index: 6;}
+
+#logoimg{width: 190px; margin-left: 15px; margin-top: -5px;}
+#igimg{width: 50px; margin-left: 15px; position: absolute; bottom: 0; z-index: 6; margin-bottom: 20px;}
+
+
+#mobileimg{width: 400px; margin-top: -20px;}
+mobile{display: flex; flex-wrap: wrap; justify-content: center;}
+#mobilea{background: transparent; font-family: Helvetica, sans-serif; font-weight: bold; font-size: 20px; color: #c1c1c0; text-decoration: none;}
+#mobilea:hover{color: #89c8d6; text-shadow: 0 0 5px #0094FF,
+              0 0 25px #89c8d6,
+              0 0 50px #89c8d6,
+              0 0 100px #89c8d6;}
+
+nav-bottom{display: flex; gap: 80px; padding: 0px; width: 100vw; height: 50px; margin-top: -100px; justify-content: center; text-align: center; align-items: center;}
+@media(max-width: 1200px){.topbox{width: 30vw;} .topbox2{display: none;}}
+
+@media(max-width: 1100px){.hoverbox, main{display: none;} .topbox{display: flex; width: 100vw; 
+    margin-top: 0px; padding-top: 0px; height: 100px; align-items: center; justify-content: center;} #logoimg{margin-left: 0px; margin-top: 0px; margin: 0px;}
+    #igimg{margin-left: 0px; left: 0; right: 0; margin-left: auto; margin-right: auto;}}
+
+    @media(min-width: 1100px){mobile{display: none;}}
+
+    </style>
+</head>
+<body>
+  <div class="topbox"> <img src="img/logo.png" id="logoimg" draggable="false"> </div> 
+  <div class="topbox2"> </div>
+    <div class="hoverbox">
+       <div class="hoveritem" id="logogrid"></div>
+       <div class="hoveritem" id="colproject"> <a href="./projects" id="abuildings"></a></div>
+       <div class="hoveritem" id="colabout"> <a href="./about" id="abuildings"></a> </div>
+       <div class="hoveritem" id="colcontact"><a href="./contact" id="abuildings"></a> </div>
+    
+    </div>
+    <main>
+  
+    <img src="img/projects.png" class="buildingimg" id="projectsbuilding" draggable="false">
+    <img src="img/about.png" class="buildingimg" id="aboutbuilding" draggable="false">
+    <img src="img/contact.png" class="buildingimg" id="contactbuilding" draggable="false">
+  
+  </main>
+
+  <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" id="igimg"></a>
+
+   <mobile>
+    <a href="./projects"><img src="img/homemobilebuilding.png" id="mobileimg" draggable="false"></a>
+   <nav-bottom> <a href="./about" id="mobilea"> ABOUT </a> <a href="./contact" id="mobilea"> CONTACT </a> </nav-bottom>
+
+    
+   </mobile>
+
+<script>
+
+//Projects variables
+const hoverItem1 = document.getElementById("colproject");
+const buildingImg1 = document.getElementById("projectsbuilding");
+//About variables
+const hoverItem2 = document.getElementById("colabout");
+const buildingImg2 = document.getElementById("aboutbuilding");
+//Contact variables
+const hoverItem3 = document.getElementById("colcontact");
+const buildingImg3 = document.getElementById("contactbuilding");
+
+//Logo variables
+const hoverItem4 = document.getElementById("logoimg");
+const buildingImg4 = document.getElementById("logoimg");
+
+//IG Logo variables
+const hoverItem5 = document.getElementById("igimg");
+const buildingImg5 = document.getElementById("igimg");  
+
+//Mobile
+const hoverItemMOBILE = document.getElementById("mobileimg");
+const hoverbuildingMOBILE = document.getElementById("mobileimg");  
+
+
+
+
+hoverItem1.addEventListener("mouseover", () => {
+    buildingImg1.src = "img/projectslit.png";
+});
+
+hoverItem1.addEventListener("mouseout", () => {
+    buildingImg1.src = "img/projects.png";
+});
+
+
+//About
+hoverItem2.addEventListener("mouseover", () => {
+    buildingImg2.src = "img/aboutlit.png";
+});
+
+hoverItem2.addEventListener("mouseout", () => {
+    buildingImg2.src = "img/about.png";
+});
+
+
+//Contact
+hoverItem3.addEventListener("mouseover", () => {
+    buildingImg3.src = "img/contactlit.png";
+});
+
+hoverItem3.addEventListener("mouseout", () => {
+    buildingImg3.src = "img/contact.png";
+});
+
+
+//Mobile
+hoverItemMOBILE.addEventListener("mouseover", () => {
+    hoverbuildingMOBILE.src = "img/homemobilebuildinglit.png";
+});
+
+hoverItemMOBILE.addEventListener("mouseout", () => {
+    hoverbuildingMOBILE.src = "img/homemobilebuilding.png";
+});
+
+
+
+
+
+// Logolit
+hoverItem4.addEventListener("mouseover", () => {
+    buildingImg4.src = "img/logolit.png";
+});
+
+hoverItem4.addEventListener("mouseout", () => {
+    buildingImg4.src = "img/logo.png";
+});
+
+
+// Ig Logo lit
+hoverItem5.addEventListener("mouseover", () => {
+buildingImg5.src = "img/iglogolit.png";
+});
+        
+hoverItem5.addEventListener("mouseout", () => {
+buildingImg5.src = "img/iglogo.png";
+});
+
+
+</script>
+    
+    </body>
+</html>
+
+
+<!-- Website made by Kris Kosta // kriskosta.github.io-->
