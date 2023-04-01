@@ -68,9 +68,13 @@ nav-bottom{display: flex; gap: 80px; padding: 0px; width: 100vw; height: 50px; m
 
 @media(max-width: 1100px){.hoverbox, main{display: none;} .topbox{display: flex; width: 100vw; 
     margin-top: 0px; padding-top: 0px; height: 100px; align-items: center; justify-content: center;} #logoimg{margin-left: 0px; margin-top: 0px; margin: 0px;}
-    #igimg{margin-left: 0px; left: 0; right: 0; margin-left: auto; margin-right: auto;}}
+    #igimg{margin-left: 0px; left: 0; right: 0; margin-left: auto; margin-right: auto; position: relative;} .igimg1{display: none;}  body{overflow-y: visible; overflow-y: scroll;}}
 
-    @media(min-width: 1100px){mobile{display: none;}}
+    @media(min-width: 1100px){mobile{display: none;} .igimg2{display: none;}}
+
+    ::-webkit-scrollbar {
+width: 0px; display: none;
+}
 
     </style>
 </head>
@@ -92,13 +96,13 @@ nav-bottom{display: flex; gap: 80px; padding: 0px; width: 100vw; height: 50px; m
   
   </main>
 
-  <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" id="igimg"></a>
+  <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" class="igimg1" id="igimg"></a>
 
    <mobile>
     <a href="./projects"><img src="img/homemobilebuilding.png" id="mobileimg" draggable="false"></a>
    <nav-bottom> <a href="./about" id="mobilea"> ABOUT </a> <a href="./contact" id="mobilea"> CONTACT </a> </nav-bottom>
 
-    
+   <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" class="igimg2" id="igimg"></a>
    </mobile>
 
 <script>
