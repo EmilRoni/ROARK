@@ -26,6 +26,7 @@
 #about-logo{margin-top: -10px; width: 100vw; position: absolute;}
 
 
+
 #logoimg{width: 190px; margin-left: 15px; margin-top: -5px;}
 #igimg{width: 50px; margin-left: 15px; position: absolute; bottom: 0; margin-bottom: 20px;}
 
@@ -33,9 +34,9 @@
 .fade-in-image { animation: fadeIn 5s; }
 
 #pagename{width: 100px; top: 0; right: 0; margin-right: 35px; margin-top: 40px; position: absolute;}
-#mobileimg{ width: 100vw; height: 100%;
+/* #mobileimg{ width: 100vw; height: 100%;
   margin-left: auto;
-  margin-right: auto; margin-top: -50px;}
+  margin-right: auto; margin-top: -50px;} */
 
 
 @keyframes fadeIn {
@@ -71,18 +72,20 @@
   max-width: 100%;
   max-height: 100%;
 }
-
+text-wrap{display: flex; flex-wrap: wrap; padding-top: 20vw; justify-content: center; align-items: center;}
+h6{font-family:"helvetica"; font-weight: bold; font-size: 20px; z-index: 10; max-width: 600px;}
 
 </style>
 </head>
 <body>
     <a href="./index" id="logoa"> <img src="img/logo.png" id="logoimg" draggable="false"></a>
-
-    <img src="img/aboutback1.png" id="layerimg" draggable="false">
     <img src="img/pageabout.png" id="pagename" draggable="false">
-    <img src="img/abouttext.png" class="fade-in-image" id="layerimg" draggable="false">
-    <img src="img/authorlit.png" class="fade-in-image" id="authorimg" draggable="false">
-    <img src="img/ABOUTMOBILE.png" class="fade-in-image" id="mobileimg" draggable="false">
+    <img src="img/aboutback1.png" id="layerimg" draggable="false">
+    <text-wrap>
+      <h6> ROARK IS AN INVESTMENT FIRM THAT AIMS TO EXPAND TRADITIONAL 
+      SCANDINAVIAN DESIGN AND LIVING PHILOSOPHIES THROUGH THE ACQUISITION, 
+      SALE, AND RENTAL OF PROPERTIES.</h6>
+    </text-wrap>
 
    
    <a href="https://www.instagram.com/emilroni/"><img src="img/iglogo.png" id="igimg"></a>
